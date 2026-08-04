@@ -1,6 +1,9 @@
+# Title
 🚀 Mamba Attention Network: Fast Inter Frame CU Partition for VVC Screen Content Coding
+# Explanation
 Official implementation of the paper "Mamba Attention Network: Fast Inter Frame CU Partition for VVC Screen Content Coding", 
-Abstract: This work proposes a novel fast CU partitioning algorithm for VVC Screen Content Coding (SCC). We introduce a Mamba Attention Network that leverages the global modeling capabilities of State Space Models (SSMs) and attention mechanisms to predict CU partitioning, significantly reducing the encoding time of VVC Inter frames for screen content.
+
+# Authors
 Authors: Jiaxin Zeng, Li Yu, Linyun Liu, Jiabao Zhu, Jinhao Kuang, Yucheng Zhong, Licong Ma, Hongbo Li, Tiansong Li
 
 # Prepare
