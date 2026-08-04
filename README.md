@@ -45,7 +45,7 @@ Modify VTM Source:Typedef.h ->enable_tracing :1
 Extract Features:
 Run the modified VTM encoder on the training set to generate raw data.
 
-/EncoderAppStatic -c encoder_randomaccess_vtm.cfg -c classSCC.cfg -i /home/zjx/sequence/SCVD/cf444_1792x1024.yuv -wdt 1792 -hgt 1024 -fr 30 -fs 0 -f 300 -q 22 -b AI_Bin/str_AI_cf444_1792x1024_qp22_nf300.bin > AI_Log/log_AI_cf444_1792x1024_qp22_nf300.txt
+/EncoderAppStatic -c encoder_randomaccess_vtm.cfg -c classSCC.cfg -i cf444_1792x1024.yuv -wdt 1792 -hgt 1024 -fr 30 -fs 0 -f 300 -q 22 -b AI_Bin/str_AI_cf444_1792x1024_qp22_nf300.bin > AI_Log/log_AI_cf444_1792x1024_qp22_nf300.txt
 mv CUInfoCost.dat AI_Bin/CUInfoCost_cf444_1792x1024_22_nf300.dat
 
 The training labels are stored in the bin file, which has not been uploaded due to its large size. 
@@ -65,7 +65,7 @@ To accelerate the VVC encoding process, we integrate the trained model into the 
  Running the Fast Encoder
 Use the following command  and set Thr.txt to run the fast encoding with the proposed method.
 
-./EncoderAppStatic -c encoder_intra_vtm.cfg -c classSCC.cfg -i /codec/zjx/test/Web2_1280x720_300_444_8b.yuv -wdt 1280 -hgt 720 -fr 30 -fs 0 -f 300 -q 22 > AI_Log/log_AI_Web2_1280x720_300_444_8b_qp22_nf2.txt
+./EncoderAppStatic -c encoder_intra_vtm.cfg -c classSCC.cfg -i Web2_1280x720_300_444_8b.yuv -wdt 1280 -hgt 720 -fr 30 -fs 0 -f 300 -q 22 > AI_Log/log_AI_Web2_1280x720_300_444_8b_qp22_nf2.txt
 
 
 Key Parameters:
@@ -80,7 +80,7 @@ Key Parameters:
   year={2025}
 }
 
-./EncoderAppStatic -el /codec16t1/zjx/IPMfastinter/IPM_TMM2025-main/results/PartitionMat/my_test/GlassHalf_3840x2160_24p_10b_444_Luma_QP22_PartitionMat.txt -c encoder_randomaccess_vtm2.cfg -c classSCC.cfg -i /codec/zjx/sequence/GlassHalf_3840x2160_24p_10b_444.yuv -wdt 3840 -hgt 2160 -fr 24 -fs 0 -q 22 -f 300 -ip 32 >AI_Log/log_AI_GlassHalfipm_3840x2160_24p_10b_444_qp22_nf300.txt 
+./EncoderAppStatic -el /my_test/GlassHalf_3840x2160_24p_10b_444_Luma_QP22_PartitionMat.txt -c encoder_randomaccess_vtm2.cfg -c classSCC.cfg -i GlassHalf_3840x2160_24p_10b_444.yuv -wdt 3840 -hgt 2160 -fr 24 -fs 0 -q 22 -f 300 -ip 32 >AI_Log/log_AI_GlassHalfipm_3840x2160_24p_10b_444_qp22_nf300.txt 
 
 @misc{liu2023,
       title={CNN-based Prediction of Partition Path for VVC Fast Inter Partitioning Using Motion Fields}, 
@@ -93,5 +93,5 @@ Key Parameters:
 }
 
 
- ./EncoderAppStatic -c encoder_randomaccess_vtm.cfg -c classSCC.cfg -i /codec/zjx/sequence/MissionControlClip3_1920x1080_60p_8b444.yuv -wdt 1920 -hgt 1080 -fr 60 -fs 0 -q 22 -f 300  -cnn /home/zjx/LNN/model/AI_OUTTrainoutAllOri/CNN400.json AI_Log/log_AI_MissionControlClip3Mvf_1920x1080_60p_8b444_qp22_nf300.txt 
+ ./EncoderAppStatic -c encoder_randomaccess_vtm.cfg -c classSCC.cfg -i MissionControlClip3_1920x1080_60p_8b444.yuv -wdt 1920 -hgt 1080 -fr 60 -fs 0 -q 22 -f 300  -cnn CNN400.json AI_Log/log_AI_MissionControlClip3Mvf_1920x1080_60p_8b444_qp22_nf300.txt 
 
