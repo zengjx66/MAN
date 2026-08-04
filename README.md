@@ -88,5 +88,7 @@ Key Parameters:
       primaryClass={cs.MM},
       url={https://arxiv.org/abs/2310.13838}, 
 }
+
+
  ./EncoderAppStaticmvf -c encoder_randomaccess_vtm.cfg -c classSCC.cfg -i /codec/zjx/sequence/MissionControlClip3_1920x1080_60p_8b444.yuv -wdt 1920 -hgt 1080 -fr 60 -fs 0 -q 22 -f 300  -cnn /home/zjx/LNN/model/AI_OUTTrainoutAllOri/CNN400.json AI_Log/log_AI_MissionControlClip3Mvf_1920x1080_60p_8b444_qp22_nf300.txt &
 
