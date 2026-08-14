@@ -74,11 +74,15 @@ Key Parameters:
 # Comparative method
 
 @article{feng2025partition,
-  title={Partition Map-Based Fast Block Partitioning for VVC Inter Coding},
   author={Feng, Xinmin and Li, Zhuoyuan and Li, Li and Liu, Dong and Wu, Feng},
-  journal={arXiv preprint arXiv:2504.18398},
-  year={2025}
-}
+  journal={IEEE Transactions on Multimedia}, 
+  title={Partition Map-Based Fast Block Partitioning for VVC Inter Coding}, 
+  year={2026},
+  volume={28},
+  number={},
+  pages={998-1013},
+  keywords={Encoding;Video coding;Partitioning algorithms;Complexity theory;Neural networks;Prediction algorithms;Convolutional neural networks;Standards;Vectors;Predictive models;Block partitioning;convolutional neural network;inter coding;partition map;quadtree plus multi-type tree;versatile video coding},
+  doi={10.1109/TMM.2025.3632639}}
 
 ./EncoderAppStatic -el /my_test/GlassHalf_3840x2160_24p_10b_444_Luma_QP22_PartitionMat.txt -c encoder_randomaccess_vtm2.cfg -c classSCC.cfg -i GlassHalf_3840x2160_24p_10b_444.yuv -wdt 3840 -hgt 2160 -fr 24 -fs 0 -q 22 -f 300 -ip 32 >AI_Log/log_AI_GlassHalfipm_3840x2160_24p_10b_444_qp22_nf300.txt 
 
