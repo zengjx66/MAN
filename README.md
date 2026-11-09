@@ -84,6 +84,7 @@ Key Parameters:
   doi={10.1109/TMM.2025.3632639}}
 
 ⚡run 
+
 ./EncoderAppStatic -el /my_test/GlassHalf_3840x2160_24p_10b_444_Luma_QP22_PartitionMat.txt -c encoder_randomaccess_vtm2.cfg -c classSCC.cfg -i GlassHalf_3840x2160_24p_10b_444.yuv -wdt 3840 -hgt 2160 -fr 24 -fs 0 -q 22 -f 300 -ip 32 >AI_Log/log_AI_GlassHalfipm_3840x2160_24p_10b_444_qp22_nf300.txt 
 
 @misc{liu2023,
@@ -97,9 +98,11 @@ Key Parameters:
 }
 
 ⚡run 
+
  ./EncoderAppStatic -c encoder_randomaccess_vtm.cfg -c classSCC.cfg -i MissionControlClip3_1920x1080_60p_8b444.yuv -wdt 1920 -hgt 1080 -fr 60 -fs 0 -q 22 -f 300  -cnn CNN400.json AI_Log/log_AI_MissionControlClip3Mvf_1920x1080_60p_8b444_qp22_nf300.txt 
 # Cite
 If it is helpful to you, please cite our paper
+
 @article{zeng2026man,
   title={Mamba Attention Network: Fast Inter Frame CU Partition for VVC Screen Content Coding},
   author={Jiaxin Zeng and Li Yu and Linyun Liu and Jiabao Zhu and Jinhao Kuang and Yucheng Zhong and Licong Ma and Hongbo Li and Tiansong Li},
